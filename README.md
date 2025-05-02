@@ -36,43 +36,35 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-1.Type the program in Quartus software.
-
-2.Compile and run the program.
-
-3.Generate the RTL schematic and save the logic diagram.
-
-4.Create nodes for inputs and outputs to generate the timing diagram.
-
-5.For different input combinations generate the timing diagram.
-
+/* write all the steps invloved */
 
 **PROGRAM**
 
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming.*/
+/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-```
-module enc(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
-input y0,y1,y2,y3,y4,y5,y6,y7;
-output a,b,c;
-assign a= (y4 | y5 | y6 | y7);
-assign b= (y2 | y3 | y6 | y7);
-assign c= (y1 | y3 | y5 | y7);
+Developed by: R Rasindhan 
+RegisterNumber:212224230222
+``` 
+module Exp_05(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+assign a0=d1|d3|d5|d7;
+assign a1=d2|d3|d6|d7;
+assign a2=d4|d5|d6|d7;
 endmodule
 ```
-## Developed by: RASINDHAN R
-## RegisterNumber: 212224230222
+
+# RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling:
+![image](https://github.com/arbasil05/ENCODER8TO3DATAFLOW/assets/144218037/4770a540-e3ff-4db7-9e80-86ae01ccc650)
 
 
-**RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+# TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling:
+![image](https://github.com/arbasil05/ENCODER8TO3DATAFLOW/assets/144218037/db92d594-8fcc-4c2c-b694-feca6050ce08)
 
-![Screenshot 2025-04-27 122413](https://github.com/user-attachments/assets/aec701d3-6445-4d32-88a7-173c9bad9c56)
 
-**TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+# RESULTS:
+Thus the given experiment is completed successfully
 
-![Screenshot 2025-04-27 122526](https://github.com/user-attachments/assets/087c67ed-dbb6-4677-a9e9-e519b983bc1d)
 
-**RESULTS**
 
-Implementing Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables executed succesfully.
 
